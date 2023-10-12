@@ -1,13 +1,16 @@
 #include <iostream>
 #include <conio.h>
+#include <ctime>
 using namespace std;
 int main()
 {
     int max,min,a[100],Random;
     max = 1001;
     min = 1;
-    for(int i = 0 ; i < 100 ; i++)
+    srand(time(0));
+	for(int i = 0 ; i < 100 ; i++)
     {
+    	
         Random = rand()%(max - min) + min;
         a[i] = Random;
     }
